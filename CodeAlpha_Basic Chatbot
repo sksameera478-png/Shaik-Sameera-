@@ -1,0 +1,24 @@
+def basic_chatbot():
+    print("ChatBot: Hi! I'm CodeAlpha Bot. Type 'bye' to exit.")
+    print("ChatBot: You can say: hello, how are you, bye")
+    
+    while True:
+        user_input = input("You: ").lower().strip()
+        
+        if user_input == "hello":
+            print("ChatBot: Hi!")
+        
+        elif user_input == "how are you":
+            print("ChatBot: I'm fine, thanks!")
+        
+        elif user_input == "bye":
+            print("ChatBot: Goodbye!")
+            break
+            
+        elif user_input == "":
+            print("ChatBot: Please say something.")
+            
+        else:
+            print("ChatBot: I don't understand. Try: hello, how are you, bye")
+
+basic_chatbot()
